@@ -1,12 +1,13 @@
-import { CardProps } from '../../interfaces'; // ✅ Correct path
+// components/common/Card.tsx
+import { CardProps } from '@/interfaces'
 
 const Card = ({ title, content }: CardProps) => {
   return (
-    <div className="bg-white p-4 shadow-md rounded-md mb-4">
+    <div className="bg-white shadow-md rounded-lg p-6 border border-gray-200">
       <h2 className="text-lg font-bold mb-2">{title}</h2>
       <p>{content}</p>
     </div>
-  );
-};
+  )
+}
 
-export default Card;
+export default Card

@@ -1,22 +1,18 @@
 // pages/home.tsx
-import Card from '../components/common/Card'; // ✅ Relative path is safer
+import Header from '@/components/layout/Header'
+import Card from '@/components/common/Card'
 
 const Home = () => {
   return (
-    <div className="p-6">
-      <h1 className="text-2xl font-bold mb-6">Welcome to the Home Page</h1>
-      
-      <Card 
-        title="Getting Started" 
-        content="This card explains how to begin using the app." 
-      />
-      
-      <Card 
-        title="Next Steps" 
-        content="This card describes the next steps in the project." 
-      />
-    </div>
-  );
-};
+    <>
+      <Header />
+      <main className="p-8 space-y-4">
+        <Card title="Welcome to ALX Project 2" content="This is a reusable Card component." />
+        <Card title="About this Project" content="We are building with Next.js, TypeScript, and Tailwind CSS." />
+        <Card title="Reusable Components" content="Reusable components make development faster and cleaner." />
+      </main>
+    </>
+  )
+}
 
-export default Home;
+export default Home
