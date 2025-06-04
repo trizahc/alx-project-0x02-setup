@@ -1,5 +1,5 @@
 // pages/home.tsx
-import Card from '../components/common/Card';
+import Card from '../components/common/Card'; // ✅ Relative path is safer
 
 const Home = () => {
   return (

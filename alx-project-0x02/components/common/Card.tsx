@@ -1,10 +1,10 @@
-import { CardProps } from '@/interfaces';
+import { CardProps } from '../../interfaces'; // ✅ Correct path
 
 const Card = ({ title, content }: CardProps) => {
   return (
-    <div className="bg-white shadow-md rounded-lg p-4 border border-gray-200">
-      <h2 className="text-lg font-bold text-blue-600 mb-2">{title}</h2>
-      <p className="text-gray-700">{content}</p>
+    <div className="bg-white p-4 shadow-md rounded-md mb-4">
+      <h2 className="text-lg font-bold mb-2">{title}</h2>
+      <p>{content}</p>
     </div>
   );
 };
