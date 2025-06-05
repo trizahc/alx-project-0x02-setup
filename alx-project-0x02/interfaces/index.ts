@@ -25,3 +25,14 @@ export interface PostProps {
   content: string; // this is the renamed version of "body" from JSONPlaceholder API
   userId: number;
 }
+export interface UserProps {
+  id: number;
+  name: string;
+  email: string;
+  address: {
+    street: string;
+    suite: string;
+    city: string;
+    zipcode: string;
+  };
+}
